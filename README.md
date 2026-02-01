@@ -1,4 +1,4 @@
-## BabelAI - Assist, Not Replace
+# BabelAI - Assist, Not Replace
 
 <img width="412" height="402" alt="Library of Babel" src="https://github.com/user-attachments/assets/afc27724-1af9-4855-a620-7af3fc37ae13" />
 
