@@ -13,20 +13,7 @@ In addition, Babel’s UI should help me with daily administrative tasks like ho
 Babel should assist me but force me to learn everything myself. If I haven’t learned something, it doesn’t help. If I learned something, but don’t remember how to do it sufficiently, Babel attempts to quiz me until I demonstrate sufficient knowledge to gain access to my personal knowledge store.
 
 # Scope
-This document details the architecture supporting systematic features of the Babel platform. Babel will consist of features: 
-
-•	Manage To Do Items
-•	Manage Calendar
-•	Ping Stock Market Updates	
-•	Have a voice assisted component
-•	Use only my well-formed notes to generate answers	
-•	Quiz me for unlimited access to regions of personal knowledge
-•	Use only my well-formed notes to generate answer	
-•	Prevent access to content outside my personal scope of knowledge
-•	Upload note set 	
-•	Integrates with mobile
-•	Ability to journal	
-•	Pull Recipes
+This document details the architecture supporting systematic features of the Babel platform. Babel will consist of features: Manage To Do Items; Manage Calendar;	Ping Stock Market Updates; Have a voice assisted componen; Use only my well-formed notes to generate answers;	Quiz me for unlimited access to regions of personal knowledge; Use only my well-formed notes to generate answer; Prevent access to content outside my personal scope of knowledge;	Upload note set; Integrates with mobile; Ability to journal; Pull Recipes
 
 # System Architecture
 <img width="3200" height="1500" alt="BabelAI" src="https://github.com/user-attachments/assets/3583a565-326b-4b73-8af1-90c8b824776e" />
