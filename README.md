@@ -19,7 +19,7 @@ This document details the architecture supporting systematic features of the Bab
 <img width="1600" height="750" alt="BabelAI" src="https://github.com/user-attachments/assets/3583a565-326b-4b73-8af1-90c8b824776e" />
 
 ## Frontend
-For the user interface, BabelAI uses the React Native framework, mainly because I’m lazy and it’s easy to build with. Babel will have both a mobile and desktop version, with possibility for voice control Client users will interact with the React UI or a voice assistant throughout usage.
+For the user interface, BabelAI uses React, vite, mainly because I'm lazy.  Babel will have desktop deployment using Tauri, with possibility for voice control Client users will interact with the Angular UI or a voice assistant throughout usage.
 
 ## Backend
 Simple Flask server to deliver results from each assistant and provide functionality for document upload to each object store. On the database side, I plan on using MongoDB Atlas Vector Search for the vector store database for notes and such, and some sort of blob storage to house recipes, and probably a local Postgres database for calendar items. The control flow assistant is the primary interactor with these databases, more so fetching based on preset commands rather than going through the assistant.
