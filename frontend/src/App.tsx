@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
 import Controls from "./tabs/controls/controls";
 import Settings from "./tabs/settings/Settings";
+import "./App.css";
+
 
 export default function App() {
 
@@ -12,6 +13,5 @@ export default function App() {
           <Route path='/settings' element={<Settings />} />
         </Routes>
     </Router>
-
   );
 }

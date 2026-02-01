@@ -1,6 +1,7 @@
 import { MicrophoneIcon, Cog6ToothIcon } from '@heroicons/react/24/outline';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { WebviewWindow } from '@tauri-apps/api/webviewWindow'
-import { useState } from 'react';
+import { useEffect } from 'react';
 import "./controls.css";
 
 
@@ -22,59 +23,43 @@ async function openSettings() {
 
 }
 
-
 export default function Controls() {
-    const [listening, setListening] = useState(false);
-
-    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-
-    const recognition = new SpeechRecognition();
-    recognition.continuous = false;
-    recognition.lang = "en-US";
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
+    const { transcript, listening, resetTranscript } = useSpeechRecognition();
 
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
-        const res = event.results[0][0].transcript;
+    useEffect(() => {
+        if (!listening && transcript) {
+            fetch('http://127.0.0.1:5000/command', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    command: transcript,
+                })
+            }).catch(error => alert('Error: ' + error.message));
 
-        setListening(false);
-
-        fetch('http://127.0.0.1:5000/command', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                command: res,
-            })
-        }).catch(error => alert('Error: ' + error.message));
-
-
-    };
-
-    recognition.onerror = (event: any) => {
-        console.error("Speech recognition error:", event);
-    };
-
+            resetTranscript();
+        }
+    }, [listening, transcript, resetTranscript]);
 
     const handleClick = () => {
-        recognition.start();
-        setListening(true)
+        SpeechRecognition.startListening({ continuous: false });
     };
-
-
 
     return (
         <div className='control-bar draggable'>
-            <div className={`bubble ${listening ? 'listening' : ''} no-drag`}>
-                <div className="icon-box" onClick={handleClick}><MicrophoneIcon /></div>
+            <div className={`bubble ${listening ? 'listening' : ''} no-drag`} onClick={handleClick}>
+                <div className="icon-box" >
+                    <MicrophoneIcon />
+                </div>
             </div>
 
             <div className='bubble settings' onClick={openSettings}>
-                <div className="icon-box no-drag"><Cog6ToothIcon /></div>
+                <div className="icon-box no-drag">
+                    <Cog6ToothIcon />
+                </div>
             </div>
         </div>
     );
 }
-
