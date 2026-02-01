@@ -14,6 +14,7 @@ Babel should assist me but force me to learn everything myself. If I haven’t l
 
 # Scope
 This document details the architecture supporting systematic features of the Babel platform. Babel will consist of features: 
+
 •	Manage To Do Items
 •	Manage Calendar
 •	Ping Stock Market Updates	
