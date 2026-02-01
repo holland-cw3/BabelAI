@@ -12,10 +12,17 @@
   "app": {
     "windows": [
       {
-        "title": "BabelAI",
-        "width": 800,
-        "height": 600
-      }
+        "label": "BabelAI",
+        "url":"/",
+        "width": 60,
+        "height": 100,
+        "decorations": false,
+        "resizable": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "windowEffects": null,
+        "shadow": false
+      }    
     ],
     "security": {
       "csp": null

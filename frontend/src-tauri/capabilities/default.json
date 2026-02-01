@@ -2,9 +2,12 @@
   "$schema": "../gen/schemas/desktop-schema.json",
   "identifier": "default",
   "description": "Capability for the main window",
-  "windows": ["main"],
+  "windows": ["BabelAI"],
   "permissions": [
     "core:default",
-    "opener:default"
-  ]
+    "opener:default",
+    "core:webview:allow-create-webview-window"
+  ],
+  "allowUrls": ["local://index.html", "local://index.html/*", "http://localhost:1420/",  "http://localhost:1420/*" ]
+
 }

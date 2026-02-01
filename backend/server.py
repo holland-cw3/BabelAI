@@ -21,11 +21,7 @@ class Command(Resource):
         command = data.get('command')
         command = command.replace('.', '')
         command = command.replace(',', '')
-        command = command.replace(';', '')
-
-
-        print(command)
-        
+        command = command.replace(';', '')        
 
         if command.lower() == 'open home':
             if system == 'Windows':
