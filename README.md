@@ -1,6 +1,6 @@
 ## BabelAI - Assist, Not Replace
 
-<img width="1024" height="1536" alt="ChatGPT Image Jan 31, 2026, 03_49_15 PM" src="https://github.com/user-attachments/assets/814dafe4-8207-402f-92d7-54b5a7800ad2" />
+<img width="512" height="765" alt="ChatGPT Image Jan 31, 2026, 03_49_15 PM" src="https://github.com/user-attachments/assets/814dafe4-8207-402f-92d7-54b5a7800ad2" />
 
 # Motivation
 The Library of Babel is a book by Jorge Luis Borges who conceived the idea of a universe in the form of a library containing every possible book of 410 pages that could ever be written. That is everything that has and ever will be written appears in the library. Most of the library is a bunch of gibberish, containing every possible ordering of characters to fill every book. Thus, the library is useless if you walk through its endless halls, the chances of you picking a useful book are slim.
