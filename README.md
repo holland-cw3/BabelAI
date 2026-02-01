@@ -1,6 +1,6 @@
 # BabelAI - Assist, Not Replace
 
-<img width="800" height="541" alt="image" src="https://github.com/user-attachments/assets/b1ebd81d-ec91-4f3b-9710-0d6c72de577c" />
+<img width="600" height="341" alt="image" src="https://github.com/user-attachments/assets/b1ebd81d-ec91-4f3b-9710-0d6c72de577c" />
 
 # Motivation
 The Library of Babel is a book by Jorge Luis Borges who conceived the idea of a universe in the form of a library containing every possible book of 410 pages that could ever be written. That is everything that has and ever will be written appears in the library. Most of the library is a bunch of gibberish, containing every possible ordering of characters to fill every book. Thus, the library is useless if you walk through its endless halls, the chances of you picking a useful book are slim.
@@ -16,7 +16,7 @@ Babel should assist me but force me to learn everything myself. If I haven’t l
 This document details the architecture supporting systematic features of the Babel platform. Babel will consist of features: Manage To Do Items; Manage Calendar;	Ping Stock Market Updates; Have a voice assisted componen; Use only my well-formed notes to generate answers;	Quiz me for unlimited access to regions of personal knowledge; Use only my well-formed notes to generate answer; Prevent access to content outside my personal scope of knowledge;	Upload note set; Integrates with mobile; Ability to journal; Pull Recipes
 
 # System Architecture
-<img width="3200" height="1500" alt="BabelAI" src="https://github.com/user-attachments/assets/3583a565-326b-4b73-8af1-90c8b824776e" />
+<img width="1600" height="750" alt="BabelAI" src="https://github.com/user-attachments/assets/3583a565-326b-4b73-8af1-90c8b824776e" />
 
 ## Frontend
 For the user interface, BabelAI uses the React Native framework, mainly because I’m lazy and it’s easy to build with. Babel will have both a mobile and desktop version, with possibility for voice control Client users will interact with the React UI or a voice assistant throughout usage.
